@@ -1,0 +1,42 @@
+python manage.py runserver
+
+cd helpme
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>О проекте</title>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+		<body style="background-image: url(images/2.jpg); background-repeat: no-repeat">
+			<div class="wrapper">
+				<header>
+						<a href="/"></a>
+						<center>
+							<h1>Расчет оценки за семестр</h1>
+						</center>
+				</header>
+				<nav>
+					<center>
+						<a class="link1" href="">Главная</a>
+						<a class="link1" href="about">О проекте</a>
+					</center>
+					
+				</nav>
+				<main>	
+					<center>
+						<p>Данный сайт предназначен для того, чтобы пользователь мог рассчитать свою вероятную оценку за семестр исходя из своих учебных привычек.</p>
+						<p>Cайт был выполнен в рамках проекта по предмету ПиКПО</p>
+						<p>студенткой группы ПРО-327</p>
+						<p>Логиновой Полиной Евгеньевной</p>
+						<p>Вычисление делается на основе данных о результатах более ста студентов</p>
+					</center>
+				</main>
+			</div>
+		</body>
+</html>
+
+"{% static 'css/styles.css' %}"

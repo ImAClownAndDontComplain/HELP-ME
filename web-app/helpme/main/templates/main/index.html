@@ -1,0 +1,149 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block main %}
+	<center>
+        <h2>Размер Вашей стипендии (в настоящее время)</h2>
+        <form action="select1.php" method="post">
+            <h3>
+                <select>
+                    <option selected disabled value=-1>Выберите параметр</option>
+                    <option value=1>Отсутствует</option>
+                    <option value=2>Пониженная</option>
+                    <option value=3>Полная</option>
+                    <option value=4>Повышенная</option>
+                    <option value=5>Президентская</option>
+                </select>
+            </h3>
+        </form>
+        <h2>Сколько в среднем времени в неделю Вы тратите на учебу?</h2>
+        <form action="select2.php" method="post">
+            <h3>
+                <select>
+                    <option selected disabled value=-1>Выберите параметр</option>
+                    <option value=1>Нисколько</option>
+                    <option value=2>Менее 5 часов</option>
+                    <option value=3>От 6 до 10 часов</option>
+                    <option value=4>От 11 до 20 часов</option>
+                    <option value=5>Более 20 часов</option>
+                </select>
+            </h3>
+        </form>
+        <h2>Как часто Вы читаете (в целом)?</h2>
+        <form action="select3.php" method="post">
+            <h3>
+                <select>
+                    <option selected disabled value=-1>Выберите параметр</option>
+                    <option value=1>Никогда</option>
+                    <option value=2>Иногда</option>
+                    <option value=3>Часто</option>
+                </select>
+            </h3>
+        </form>
+        <h2>Как часто Вы читаете научную литературу?</h2>
+        <form action="select4.php" method="post">
+            <h3>
+                <select>
+                    <option selected disabled value=-1>Выберите параметр</option>
+                    <option value=1>Никогда</option>
+                    <option value=2>Иногда</option>
+                    <option value=3>Часто</option>
+                </select>
+            </h3>
+        </form>
+        <h2>Какое впечатление у Вас остается от занятий?</h2>
+        <form action="select5.php" method="post">
+            <h3>
+                <select>
+                    <option selected disabled value=-1>Выберите параметр</option>
+                    <option value=1>Положительное</option>
+                    <option value=2>Отрицательное</option>
+                    <option value=3>Нейтральное</option>
+                </select>
+            </h3>
+        </form>
+        <h2>Как часто Вы посещаете занятия?</h2>
+        <form action="select6.php" method="post">
+            <h3>
+                <select>
+                    <option selected disabled value=-1>Выберите параметр</option>
+                    <option value=1>Всегда</option>
+                    <option value=2>Иногда</option>
+                    <option value=3>Никогда</option>
+                </select>
+            </h3>
+        </form>
+        <h2>Как Вы готовитесь к экзамену/зачету?</h2>
+        <form action="select7.php" method="post">
+            <h3>
+                <select>
+                    <option selected disabled value=-1>Выберите параметр</option>
+                    <option value=1>В одиночку</option>
+                    <option value=2>В компании друзнй</option>
+                    <option value=3>Никак</option>
+                </select>
+            </h3>
+        </form>
+        <h2>Когда Вы готовитесь/начинаете готовиться к экзамену/зачету?</h2>
+        <form action="select8.php" method="post">
+            <h3>
+                <select>
+                    <option selected disabled value=-1>Выберите параметр</option>
+                    <option value=1>В последний момент</option>
+                    <option value=2>Регулярно в течение семестра</option>
+                    <option value=3>Никогда</option>
+                </select>
+            </h3>
+        </form>
+        <h2>Как часто Вы делаете записи на занятиях?</h2>
+        <form action="select9.php" method="post">
+            <h3>
+                <select>
+                    <option selected disabled value=-1>Выберите параметр</option>
+                    <option value=1>Никогда</option>
+                    <option value=2>Иногда</option>
+                    <option value=3>Всегда</option>
+                </select>
+            </h3>
+        </form>
+        <h2>Как часто Вы слушаете преподавателей на занятиях?</h2>
+        <form action="select10.php" method="post">
+            <h3>
+                <select>
+                    <option selected disabled value=-1>Выберите параметр</option>
+                    <option value=1>Никогда</option>
+                    <option value=2>Иногда</option>
+                    <option value=3>Всегда</option>
+                </select>
+            </h3>
+        </form>
+        <h2>Как часто Вы участвуете в обсуждениях/дискуссиях на занятиях?</h2>
+        <form action="select11.php" method="post">
+            <h3>
+                <select>
+                    <option selected disabled value=-1>Выберите параметр</option>
+                    <option value=1>Никогда</option>
+                    <option value=2>Иногда</option>
+                    <option value=3>Всегда</option>
+                </select>
+            </h3>
+        </form>
+        <h2>Ваша средняя оценка на данный момент</h2>
+        <form action="select12.php" method="post">
+            <h3>
+                <select>
+                    <option selected disabled value=-1>Выберите параметр</option>
+                    <option value=1>2(неудовлетворительно)</option>
+                    <option value=1>2 или 3</option>
+                    <option value=2>3(удовлетворительно)</option>
+                    <option value=3>3 или 4</option>
+                    <option value=3>4(хорошо)</option>
+                    <option value=4>4 или 5</option>
+                    <option value=5>5(отлично)</option>
+                </select>
+            </h3>
+        </form>
+        <p><input type="button" value="Рассчитать результат" onClick='location.href="result"'></p>
+    </center>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Расчет оценки{% endblock %}
+
+{% block main %}
+	<center>
+		<h2>Ваш результат:</h2>
+		<p>Обратите внимание, что он может быть неточным и не претендует на достоверность</p>
+		<p>Это всего лишь предсказание на основе существующих и введенных Вами данных</p>
+		<p><textarea  disabled rows="15" cols="80" name="text"></textarea></p>
+		<p><input type="button" value="Ещё раз" onClick='location.href=""'></p>
+	</center>
+{% endblock %}
