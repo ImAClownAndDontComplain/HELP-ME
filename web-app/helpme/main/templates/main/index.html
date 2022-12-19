@@ -4,10 +4,12 @@
 
 {% block main %}
 	<center>
+        <p ><input type="button" value="Используемые данные" onClick='location.href="{% url "dbases" %}"'></p>
+        <h2></h2>
         <h2>Размер Вашей стипендии (в настоящее время)</h2>
         <form action="select1.php" method="post">
             <h3>
-                <select>
+                <select id = 1>
                     <option selected disabled value=-1>Выберите параметр</option>
                     <option value=1>Отсутствует</option>
                     <option value=2>Пониженная</option>
@@ -20,7 +22,7 @@
         <h2>Сколько в среднем времени в неделю Вы тратите на учебу?</h2>
         <form action="select2.php" method="post">
             <h3>
-                <select>
+                <select id = 2>
                     <option selected disabled value=-1>Выберите параметр</option>
                     <option value=1>Нисколько</option>
                     <option value=2>Менее 5 часов</option>
@@ -33,7 +35,7 @@
         <h2>Как часто Вы читаете (в целом)?</h2>
         <form action="select3.php" method="post">
             <h3>
-                <select>
+                <select id = 3>
                     <option selected disabled value=-1>Выберите параметр</option>
                     <option value=1>Никогда</option>
                     <option value=2>Иногда</option>
@@ -44,7 +46,7 @@
         <h2>Как часто Вы читаете научную литературу?</h2>
         <form action="select4.php" method="post">
             <h3>
-                <select>
+                <select id = 4>
                     <option selected disabled value=-1>Выберите параметр</option>
                     <option value=1>Никогда</option>
                     <option value=2>Иногда</option>
@@ -55,7 +57,7 @@
         <h2>Какое впечатление у Вас остается от занятий?</h2>
         <form action="select5.php" method="post">
             <h3>
-                <select>
+                <select id = 5>
                     <option selected disabled value=-1>Выберите параметр</option>
                     <option value=1>Положительное</option>
                     <option value=2>Отрицательное</option>
@@ -66,7 +68,7 @@
         <h2>Как часто Вы посещаете занятия?</h2>
         <form action="select6.php" method="post">
             <h3>
-                <select>
+                <select id = 6>
                     <option selected disabled value=-1>Выберите параметр</option>
                     <option value=1>Всегда</option>
                     <option value=2>Иногда</option>
@@ -77,10 +79,10 @@
         <h2>Как Вы готовитесь к экзамену/зачету?</h2>
         <form action="select7.php" method="post">
             <h3>
-                <select>
+                <select id = 7>
                     <option selected disabled value=-1>Выберите параметр</option>
                     <option value=1>В одиночку</option>
-                    <option value=2>В компании друзнй</option>
+                    <option value=2>В компании друзей</option>
                     <option value=3>Никак</option>
                 </select>
             </h3>
@@ -88,7 +90,7 @@
         <h2>Когда Вы готовитесь/начинаете готовиться к экзамену/зачету?</h2>
         <form action="select8.php" method="post">
             <h3>
-                <select>
+                <select id = 8>
                     <option selected disabled value=-1>Выберите параметр</option>
                     <option value=1>В последний момент</option>
                     <option value=2>Регулярно в течение семестра</option>
@@ -99,7 +101,7 @@
         <h2>Как часто Вы делаете записи на занятиях?</h2>
         <form action="select9.php" method="post">
             <h3>
-                <select>
+                <select id = 9>
                     <option selected disabled value=-1>Выберите параметр</option>
                     <option value=1>Никогда</option>
                     <option value=2>Иногда</option>
@@ -110,7 +112,7 @@
         <h2>Как часто Вы слушаете преподавателей на занятиях?</h2>
         <form action="select10.php" method="post">
             <h3>
-                <select>
+                <select id = 10>
                     <option selected disabled value=-1>Выберите параметр</option>
                     <option value=1>Никогда</option>
                     <option value=2>Иногда</option>
@@ -121,7 +123,7 @@
         <h2>Как часто Вы участвуете в обсуждениях/дискуссиях на занятиях?</h2>
         <form action="select11.php" method="post">
             <h3>
-                <select>
+                <select id = 11>
                     <option selected disabled value=-1>Выберите параметр</option>
                     <option value=1>Никогда</option>
                     <option value=2>Иногда</option>
@@ -132,7 +134,7 @@
         <h2>Ваша средняя оценка на данный момент</h2>
         <form action="select12.php" method="post">
             <h3>
-                <select>
+                <select id = 12>
                     <option selected disabled value=-1>Выберите параметр</option>
                     <option value=1>2(неудовлетворительно)</option>
                     <option value=1>2 или 3</option>
@@ -144,6 +146,6 @@
                 </select>
             </h3>
         </form>
-        <p><input type="button" value="Рассчитать результат" onClick='location.href="{% url "result" %}"'></p>
-    </center>
+        <p ><input id = "calc" type="button" value="Рассчитать результат" onClick='location.href="{% url "result" %}"'></p>
+       </center>
 {% endblock %}

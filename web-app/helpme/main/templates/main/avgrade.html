@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Средняя оценка{% endblock %}
+
+{% block main %}
+	<center>
+		<h2>Средняя оценка по БД:</h2>
+		<textarea  disabled rows="3" cols="20" name="text" >{{result}}</textarea>
+		<p><input type="button" value="Назад" onClick='location.href="{% url "dbases" %}"'></p>
+	</center>
+{% endblock %}

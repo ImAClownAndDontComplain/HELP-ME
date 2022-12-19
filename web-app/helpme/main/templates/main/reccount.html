@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Количество записей{% endblock %}
+
+{% block main %}
+	<center>
+		<h2>Количество записей в базе данных:</h2>
+		<textarea  disabled rows="3" cols="20" name="text" >{{result}}</textarea>
+		<p><input type="button" value="Назад" onClick='location.href="{% url "dbases" %}"'></p>
+	</center>
+{% endblock %}

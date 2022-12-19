@@ -1,0 +1,13 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}База данных{% endblock %}
+
+{% block main %}
+	<center>
+		<h2>Здесь предоставлена некоторая информация об используемых данных</h2>
+		<p><input type="button" value="Средняя оценка" onClick='location.href="{% url "avgrade" %}"'></p>
+		<p><input type="button" value="Количество записей в базе" onClick='location.href="{% url "reccount" %}"'></p>
+		<p><input type="button" value="Обработанные файлы" onClick='location.href="{% url "processed" %}"'></p>
+	</center>
+{% endblock %}
+
